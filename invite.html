@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MockIT | Invite Team</title>
+    <meta
+      name="description"
+      content="Invite team and success setup screen for the MockIT recruiter onboarding flow."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="setup-page">
+    <main class="setup-shell invite-shell">
+      <aside class="setup-sidebar invite-sidebar">
+        <div class="setup-sidebar-head company-sidebar-head">
+          <h1>Setup Guide</h1>
+          <p>Recruiter Onboarding</p>
+        </div>
+
+        <nav class="setup-nav invite-nav">
+          <a class="setup-nav-item" href="./welcome.html">
+            <span class="setup-nav-icon">→</span>
+            <span>Welcome</span>
+          </a>
+          <a class="setup-nav-item" href="./company.html">
+            <span class="setup-nav-icon">▦</span>
+            <span>Company Info</span>
+          </a>
+          <a class="setup-nav-item" href="./hiring.html">
+            <span class="setup-nav-icon">◔</span>
+            <span>Team Setup</span>
+          </a>
+          <a class="setup-nav-item active" href="./invite.html">
+            <span class="setup-nav-icon">✈</span>
+            <span>Launch</span>
+          </a>
+        </nav>
+
+        <div class="invite-progress-card">
+          <span>PROGRESS</span>
+          <div class="invite-progress-bar"><i></i></div>
+          <small>Step 4 of 4</small>
+        </div>
+
+        <div class="setup-profile">
+          <div class="setup-profile-icon">◉</div>
+          <span>Recruiter Admin</span>
+        </div>
+      </aside>
+
+      <section class="setup-main invite-main">
+        <header class="setup-topbar invite-topbar">
+          <a class="setup-wordmark" href="./index.html">RecruitSilk</a>
+          <nav class="invite-topnav" aria-label="Settings navigation">
+            <a href="#">Dashboard</a>
+            <a href="#">Jobs</a>
+            <a href="#">Talent</a>
+            <a class="active" href="./invite.html">Settings</a>
+          </nav>
+          <div class="invite-top-actions">
+            <button type="button" aria-label="Help">?</button>
+            <button type="button" aria-label="Profile">◎</button>
+          </div>
+        </header>
+
+        <section class="invite-hero">
+          <h1>Invite your team</h1>
+          <p>Collaborate with your recruiters and hiring managers</p>
+        </section>
+
+        <section class="invite-form-card">
+          <div class="invite-form-grid">
+            <div class="invite-field">
+              <label>Email Address</label>
+              <input type="email" placeholder="sarah@company.com" />
+            </div>
+            <div class="invite-field">
+              <label>Role</label>
+              <div class="invite-select-shell">
+                <select>
+                  <option>Recruiter</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="invite-field">
+              <input type="email" placeholder="marcus@company.com" />
+            </div>
+            <div class="invite-field">
+              <div class="invite-select-shell">
+                <select>
+                  <option>Member</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <button class="invite-add-person" type="button">⊕ Add another person</button>
+
+          <div class="invite-submit-block">
+            <button class="invite-submit" type="button">Complete setup</button>
+            <a href="#">Skip for now</a>
+          </div>
+        </section>
+
+        <section class="invite-benefits-grid">
+          <article class="invite-benefit-card">
+            <div class="invite-benefit-icon">⋈</div>
+            <h2>Team Roles</h2>
+            <p>Manage granular permissions for your hiring pipeline.</p>
+          </article>
+
+          <article class="invite-benefit-card">
+            <div class="invite-benefit-icon violet">✉</div>
+            <h2>Bulk Invite</h2>
+            <p>Import your team via CSV or LinkedIn integration.</p>
+          </article>
+
+          <article class="invite-benefit-card">
+            <div class="invite-benefit-icon blue">◉</div>
+            <h2>Security</h2>
+            <p>Enterprise-grade SSO and security for all team members.</p>
+          </article>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>

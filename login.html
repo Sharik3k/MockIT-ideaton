@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MockIT | Sign In</title>
+    <meta
+      name="description"
+      content="MockIT sign in screen for recruiters powered by AI intelligence."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="auth-page">
+    <main class="auth-shell">
+      <section class="auth-card auth-brand-panel">
+        <a class="brand auth-brand" href="./index.html">
+          <img class="brand-logo" src="./logo.png" alt="MockIT" />
+        </a>
+
+        <div class="auth-brand-copy">
+          <h1>Empowering recruiters with AI intelligence</h1>
+          <p>
+            Automate your screening process, generate high-fidelity interview
+            questions, and identify top talent 10x faster with our
+            recruiter-first platform.
+          </p>
+        </div>
+
+        <article class="testimonial-card">
+          <div class="testimonial-header">
+            <div class="avatar-circle">A</div>
+            <div>
+              <strong>Alex Thompson</strong>
+              <span>Talent Acquisition, TechCorp</span>
+            </div>
+          </div>
+          <p>
+            "MockIT transformed how we evaluate candidates. The AI insights are
+            remarkably accurate and have saved us hundreds of hours."
+          </p>
+        </article>
+      </section>
+
+      <section class="auth-card auth-form-panel">
+        <div class="auth-form-copy">
+          <h2>Welcome Back</h2>
+          <p>Please enter your details to sign in</p>
+        </div>
+
+        <div class="oauth-row">
+          <button class="oauth-button" type="button">
+            <span class="oauth-icon google-icon">G</span>
+            <span>Google</span>
+          </button>
+          <button class="oauth-button" type="button">
+            <span class="oauth-icon microsoft-icon"></span>
+            <span>Microsoft</span>
+          </button>
+        </div>
+
+        <div class="divider-row">
+          <span></span>
+          <p>OR CONTINUE WITH EMAIL</p>
+          <span></span>
+        </div>
+
+        <form class="auth-form">
+          <label class="field-label" for="email">Email Address</label>
+          <div class="input-shell">
+            <input id="email" type="email" placeholder="name@company.com" />
+          </div>
+
+          <div class="field-row">
+            <label class="field-label" for="password">Password</label>
+            <a class="auth-link" href="#">Forgot Password?</a>
+          </div>
+          <div class="input-shell">
+            <input id="password" type="password" value="password" />
+            <button class="eye-button" type="button" aria-label="Toggle password visibility">
+              <span></span>
+            </button>
+          </div>
+
+          <label class="remember-row">
+            <input type="checkbox" />
+            <span>Remember me for 30 days</span>
+          </label>
+
+          <button class="signin-button" type="submit">Sign In</button>
+        </form>
+
+        <p class="signup-copy">
+          Don't have an account?
+          <a class="auth-link auth-link-strong" href="#">Sign Up</a>
+        </p>
+      </section>
+    </main>
+
+    <footer class="auth-footer">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Cookie Settings</a>
+    </footer>
+  </body>
+</html>
