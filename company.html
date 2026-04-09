@@ -37,7 +37,7 @@
             <span class="setup-nav-icon">◔</span>
             <span>Team Setup</span>
           </a>
-          <a class="setup-nav-item" href="#">
+          <a class="setup-nav-item" href="./invite.html">
             <span class="setup-nav-icon">✈</span>
             <span>Launch</span>
           </a>
@@ -53,7 +53,7 @@
         <header class="setup-topbar company-topbar">
           <a class="setup-wordmark" href="./index.html">RecruitSilk</a>
           <nav class="company-topnav" aria-label="Company setup navigation">
-            <a href="#">Dashboard</a>
+            <a href="./dashboard.html">Dashboard</a>
             <a class="active" href="./company.html">Onboarding</a>
           </nav>
         </header>
@@ -71,14 +71,14 @@
             <form class="company-form">
               <label class="company-field">
                 <span>Company Name</span>
-                <input type="text" placeholder="e.g. Silk Recruitment Systems" />
+                <input id="company-name" type="text" placeholder="e.g. Silk Recruitment Systems" />
               </label>
 
               <div class="company-field-grid">
                 <label class="company-field">
                   <span>Industry</span>
                   <div class="company-select-shell">
-                    <select>
+                    <select id="company-industry">
                       <option>Select industry</option>
                     </select>
                   </div>
@@ -87,7 +87,7 @@
                 <label class="company-field">
                   <span>Region</span>
                   <div class="company-select-shell">
-                    <select>
+                    <select id="company-region">
                       <option>Select region</option>
                     </select>
                   </div>
@@ -138,5 +138,6 @@
         </div>
       </section>
     </main>
+    <script src="./script.js"></script>
   </body>
 </html>

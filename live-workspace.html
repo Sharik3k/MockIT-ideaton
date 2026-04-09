@@ -38,7 +38,7 @@
 
         <div class="app-sidebar-bottom">
           <a href="#"><span>⚙</span><span>Settings</span></a>
-          <a href="#"><span>◫</span><span>Billing</span></a>
+          <a href="./billing.html"><span>◫</span><span>Billing</span></a>
         </div>
       </aside>
 
@@ -114,7 +114,7 @@
                 </div>
               </div>
 
-              <div class="workspace-response-box">
+              <div class="workspace-response-box" contenteditable="true" spellcheck="false">
                 Start typing candidate response here...
                 Mention specific frameworks or methodologies they use to track debt.
               </div>
@@ -123,11 +123,11 @@
                 <div>
                   <span>ANSWER QUALITY SCORE</span>
                 </div>
-                <strong>7.5<small>/10</small></strong>
+                <strong id="workspace-score-value">7.5<small>/10</small></strong>
               </div>
 
               <div class="workspace-score-bar">
-                <i><b style="width: 75%"></b></i>
+                <i><b id="workspace-score-fill" style="width: 75%"></b></i>
                 <span class="workspace-score-knob"></span>
               </div>
 
@@ -139,8 +139,8 @@
             </article>
 
             <div class="workspace-nav-actions">
-              <a class="workspace-nav-button muted" href="#">← Previous Question</a>
-              <a class="workspace-nav-button primary" href="#">Next Question →</a>
+              <a class="workspace-nav-button muted" href="./resume-analysis.html">← Previous Question</a>
+              <a class="workspace-nav-button primary" href="./summary-report.html">Next Question →</a>
             </div>
           </div>
 
@@ -201,5 +201,6 @@
         </footer>
       </section>
     </main>
+    <script src="./script.js"></script>
   </body>
 </html>

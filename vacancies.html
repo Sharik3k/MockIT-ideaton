@@ -30,16 +30,16 @@
         <nav class="app-nav">
           <a href="./dashboard.html"><span>▦</span><span>Dashboard</span></a>
           <a class="active" href="./vacancies.html"><span>▭</span><span>Vacancies</span></a>
-          <a href="#"><span>◔</span><span>Candidates</span></a>
-          <a href="#"><span>▤</span><span>Workspace</span></a>
+          <a href="./candidate-overview.html"><span>◔</span><span>Candidates</span></a>
+          <a href="./live-workspace.html"><span>▤</span><span>Workspace</span></a>
           <a href="#"><span>⊏</span><span>Library</span></a>
           <a href="#"><span>▮</span><span>Analytics</span></a>
         </nav>
 
         <div class="app-sidebar-bottom">
           <a href="#"><span>⚙</span><span>Settings</span></a>
-          <a href="#"><span>◫</span><span>Billing</span></a>
-          <a class="app-primary-side" href="#">New Vacancy</a>
+          <a href="./billing.html"><span>◫</span><span>Billing</span></a>
+          <a class="app-primary-side" href="./vacancies.html">New Vacancy</a>
         </div>
       </aside>
 
@@ -47,7 +47,7 @@
         <header class="app-topbar">
           <div class="app-search">
             <span>⌕</span>
-            <input type="text" placeholder="Search vacancies..." />
+            <input id="vacancy-search" type="text" placeholder="Search vacancies..." />
           </div>
           <div class="app-top-actions">
             <button type="button" aria-label="Notifications">◔</button>
@@ -61,18 +61,18 @@
             <h1>Vacancies</h1>
             <p>Manage and monitor your open hiring positions</p>
           </div>
-          <a class="vacancies-create" href="#">⊕ Create Vacancy</a>
+          <a class="vacancies-create" href="./vacancies.html">⊕ Create Vacancy</a>
         </section>
 
         <section class="vacancies-toolbar">
           <div class="vacancies-filter-card">
             <span>STATUS</span>
-            <button type="button">All Statuses <b>⌄</b></button>
+            <button id="status-filter" type="button">All Statuses <b>⌄</b></button>
           </div>
 
           <div class="vacancies-filter-card">
             <span>DEPARTMENT</span>
-            <button type="button">All Departments <b>⌄</b></button>
+            <button id="department-filter" type="button">All Departments <b>⌄</b></button>
           </div>
 
           <div class="vacancies-stats-card">
@@ -92,7 +92,7 @@
             <span>LAST UPDATED</span>
           </div>
 
-          <article class="vacancies-row">
+          <article class="vacancies-row" data-title="Senior Frontend Engineer" data-department="Engineering" data-status="Active">
             <div class="vacancy-title">
               <span class="vacancy-icon">‹›</span>
               <strong>Senior Frontend Engineer</strong>
@@ -104,7 +104,7 @@
             <span>2 hours ago</span>
           </article>
 
-          <article class="vacancies-row">
+          <article class="vacancies-row" data-title="Lead Product Designer" data-department="Design" data-status="Draft">
             <div class="vacancy-title">
               <span class="vacancy-icon">◔</span>
               <strong>Lead Product Designer</strong>
@@ -116,7 +116,7 @@
             <span>Yesterday</span>
           </article>
 
-          <article class="vacancies-row">
+          <article class="vacancies-row" data-title="Backend Developer (Node.js)" data-department="Engineering" data-status="Active">
             <div class="vacancy-title">
               <span class="vacancy-icon">▣</span>
               <strong>Backend Developer (Node.js)</strong>
@@ -128,7 +128,7 @@
             <span>Oct 24, 2023</span>
           </article>
 
-          <article class="vacancies-row">
+          <article class="vacancies-row" data-title="Growth Marketing Manager" data-department="Marketing" data-status="Active">
             <div class="vacancy-title">
               <span class="vacancy-icon">↗</span>
               <strong>Growth Marketing Manager</strong>
@@ -142,7 +142,7 @@
         </section>
 
         <div class="vacancies-footer-row">
-          <p>Showing 1 to 4 of 24 results</p>
+          <p id="vacancies-results-copy">Showing 1 to 4 of 24 results</p>
           <div class="vacancies-pagination">
             <button type="button">‹</button>
             <button class="active" type="button">1</button>
@@ -167,5 +167,6 @@
         </footer>
       </section>
     </main>
+    <script src="./script.js"></script>
   </body>
 </html>
