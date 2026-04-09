@@ -470,11 +470,31 @@ function setupCandidateOverviewDemo() {
 
 function setupResumeAnalysisDemo() {
   const savedState = readDemoState();
-  const title = document.querySelector(".resume-analysis-head h1, .resume-page-head h1");
+  const title = document.querySelector(".resume-analysis-head h1, .resume-page-head h1, .resume-head h1");
   const exportLink = document.querySelector('a[href="./summary-report.html"]');
+  const breadcrumb = document.querySelector(".resume-breadcrumbs a:last-of-type");
+  const docName = document.querySelector(".resume-doc-card h2");
+  const docRole = document.querySelector(".resume-role");
+  const recommendationText = document.querySelector(".resume-recommendation p");
 
   if (title && savedState.selectedCandidateName) {
     title.textContent = `${savedState.selectedCandidateName} Resume Analysis`;
+  }
+
+  if (breadcrumb && savedState.selectedCandidateName && savedState.selectedCandidateRole) {
+    breadcrumb.textContent = `${savedState.selectedCandidateName} - ${savedState.selectedCandidateRole}`;
+  }
+
+  if (docName && savedState.selectedCandidateName) {
+    docName.textContent = savedState.selectedCandidateName;
+  }
+
+  if (docRole && savedState.selectedCandidateRole) {
+    docRole.textContent = savedState.selectedCandidateRole;
+  }
+
+  if (recommendationText && savedState.selectedCandidateRole) {
+    recommendationText.textContent = `Proceed to technical interview. Focus on clarifying ownership, delivery impact, and role-fit details for the ${savedState.selectedCandidateRole} position.`;
   }
 
   exportLink?.addEventListener("click", () => {
@@ -558,12 +578,106 @@ function setupSummaryDemo() {
   }
 }
 
+function setupDashboardDemo() {
+  const savedState = readDemoState();
+  const welcomeHeading = document.querySelector(".dashboard-head h1");
+  const welcomeCopy = document.querySelector(".dashboard-head p");
+  const userName = document.querySelector(".dashboard-user strong");
+  const userRole = document.querySelector(".dashboard-user span");
+  const vacancyCards = document.querySelectorAll(".dashboard-vacancy-card");
+  const insightLink = document.querySelector('.dashboard-insight-card a[href="./invite.html"]');
+  const stats = document.querySelectorAll(".dashboard-stat-card strong");
+
+  if (welcomeHeading && savedState.companyName) {
+    welcomeHeading.textContent = `Welcome back to ${savedState.companyName}.`;
+  }
+
+  if (welcomeCopy && Array.isArray(savedState.invitedTeam) && savedState.invitedTeam.length > 0) {
+    welcomeCopy.textContent = `Your workspace is live, ${savedState.invitedTeam.length} teammates were invited, and the hiring flow is ready for review.`;
+  }
+
+  if (userName && savedState.userEmail) {
+    userName.textContent = savedState.userEmail.split("@")[0] || userName.textContent;
+  }
+
+  if (userRole && savedState.hiringGoal) {
+    userRole.textContent = savedState.hiringGoal.toUpperCase();
+  }
+
+  if (stats.length >= 4 && Array.isArray(savedState.invitedTeam)) {
+    stats[0].textContent = savedState.selectedVacancy ? "25" : stats[0].textContent;
+    stats[1].textContent = `${1248 + savedState.invitedTeam.length}`;
+  }
+
+  vacancyCards.forEach((card) => {
+    card.classList.add("is-clickable");
+    card.addEventListener("click", () => {
+      const title = card.querySelector(".dashboard-vacancy-copy strong")?.textContent.trim();
+      if (title) {
+        writeDemoState({
+          selectedVacancy: title,
+          selectedCandidateName: "Alex Thompson",
+          selectedCandidateRole: title,
+        });
+      }
+      window.location.href = "./vacancies.html";
+    });
+  });
+
+  insightLink?.addEventListener("click", (event) => {
+    event.preventDefault();
+    showDemoToast("Invitations queued for shortlisted candidates");
+    window.setTimeout(() => {
+      window.location.href = "./invite.html";
+    }, 300);
+  });
+}
+
+function setupBillingDemo() {
+  const searchInput = document.querySelector('.billing-top-actions .app-search input');
+  const historyRows = [...document.querySelectorAll(".billing-history-row")];
+  const actionLinks = document.querySelectorAll(".billing-plan-actions a");
+  const exportLink = document.querySelector(".billing-history-card .billing-card-head a");
+  const downloadButtons = document.querySelectorAll(".billing-history-row button");
+
+  if (searchInput && historyRows.length > 0) {
+    searchInput.addEventListener("input", () => {
+      const query = searchInput.value.trim().toLowerCase();
+      historyRows.forEach((row) => {
+        const text = row.textContent.toLowerCase();
+        row.hidden = query !== "" && !text.includes(query);
+      });
+    });
+  }
+
+  actionLinks.forEach((link) => {
+    link.addEventListener("click", (event) => {
+      event.preventDefault();
+      const label = link.textContent.trim();
+      showDemoToast(`${label} opened in billing assistant`);
+    });
+  });
+
+  exportLink?.addEventListener("click", (event) => {
+    event.preventDefault();
+    showDemoToast("Billing history exported");
+  });
+
+  downloadButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      showDemoToast("Invoice downloaded");
+    });
+  });
+}
+
 setupLoginDemo();
 setupCompanyDemo();
 setupHiringDemo();
 setupInviteDemo();
+setupDashboardDemo();
 setupVacanciesDemo();
 setupCandidateOverviewDemo();
 setupResumeAnalysisDemo();
 setupLiveWorkspaceDemo();
 setupSummaryDemo();
+setupBillingDemo();
