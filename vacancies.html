@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MockIT | Vacancies</title>
+    <meta
+      name="description"
+      content="Vacancies management screen for the MockIT recruiter workspace."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="app-page">
+    <main class="app-shell">
+      <aside class="app-sidebar">
+        <div class="app-brand">
+          <div class="app-brand-icon">⬢</div>
+          <div>
+            <strong>MockIT AI</strong>
+            <span>Recruiter Pro</span>
+          </div>
+        </div>
+
+        <nav class="app-nav">
+          <a href="./dashboard.html"><span>▦</span><span>Dashboard</span></a>
+          <a class="active" href="./vacancies.html"><span>▭</span><span>Vacancies</span></a>
+          <a href="#"><span>◔</span><span>Candidates</span></a>
+          <a href="#"><span>▤</span><span>Workspace</span></a>
+          <a href="#"><span>⊏</span><span>Library</span></a>
+          <a href="#"><span>▮</span><span>Analytics</span></a>
+        </nav>
+
+        <div class="app-sidebar-bottom">
+          <a href="#"><span>⚙</span><span>Settings</span></a>
+          <a href="#"><span>◫</span><span>Billing</span></a>
+          <a class="app-primary-side" href="#">New Vacancy</a>
+        </div>
+      </aside>
+
+      <section class="app-main">
+        <header class="app-topbar">
+          <div class="app-search">
+            <span>⌕</span>
+            <input type="text" placeholder="Search vacancies..." />
+          </div>
+          <div class="app-top-actions">
+            <button type="button" aria-label="Notifications">◔</button>
+            <button type="button" aria-label="Help">?</button>
+            <button class="avatar-button" type="button" aria-label="Profile">👨🏻</button>
+          </div>
+        </header>
+
+        <section class="vacancies-head">
+          <div>
+            <h1>Vacancies</h1>
+            <p>Manage and monitor your open hiring positions</p>
+          </div>
+          <a class="vacancies-create" href="#">⊕ Create Vacancy</a>
+        </section>
+
+        <section class="vacancies-toolbar">
+          <div class="vacancies-filter-card">
+            <span>STATUS</span>
+            <button type="button">All Statuses <b>⌄</b></button>
+          </div>
+
+          <div class="vacancies-filter-card">
+            <span>DEPARTMENT</span>
+            <button type="button">All Departments <b>⌄</b></button>
+          </div>
+
+          <div class="vacancies-stats-card">
+            <div><span>TOTAL</span><strong>24</strong></div>
+            <div><span>ACTIVE</span><strong class="green">18</strong></div>
+            <div><span>DRAFT</span><strong class="orange">6</strong></div>
+          </div>
+        </section>
+
+        <section class="vacancies-table-card">
+          <div class="vacancies-table-head">
+            <span>JOB TITLE</span>
+            <span>DEPARTMENT</span>
+            <span>SENIORITY</span>
+            <span>STATUS</span>
+            <span>CANDIDATES</span>
+            <span>LAST UPDATED</span>
+          </div>
+
+          <article class="vacancies-row">
+            <div class="vacancy-title">
+              <span class="vacancy-icon">‹›</span>
+              <strong>Senior Frontend Engineer</strong>
+            </div>
+            <span>Engineering</span>
+            <span class="vacancy-chip">SENIOR</span>
+            <span class="vacancy-status active">● Active</span>
+            <span class="vacancy-candidates">👤👤 +12</span>
+            <span>2 hours ago</span>
+          </article>
+
+          <article class="vacancies-row">
+            <div class="vacancy-title">
+              <span class="vacancy-icon">◔</span>
+              <strong>Lead Product Designer</strong>
+            </div>
+            <span>Design</span>
+            <span class="vacancy-chip">LEAD</span>
+            <span class="vacancy-status draft">● Draft</span>
+            <span class="vacancy-candidates muted">—</span>
+            <span>Yesterday</span>
+          </article>
+
+          <article class="vacancies-row">
+            <div class="vacancy-title">
+              <span class="vacancy-icon">▣</span>
+              <strong>Backend Developer (Node.js)</strong>
+            </div>
+            <span>Engineering</span>
+            <span class="vacancy-chip">MID-LEVEL</span>
+            <span class="vacancy-status active">● Active</span>
+            <span class="vacancy-candidates">👤👤 +8</span>
+            <span>Oct 24, 2023</span>
+          </article>
+
+          <article class="vacancies-row">
+            <div class="vacancy-title">
+              <span class="vacancy-icon">↗</span>
+              <strong>Growth Marketing Manager</strong>
+            </div>
+            <span>Marketing</span>
+            <span class="vacancy-chip">MANAGER</span>
+            <span class="vacancy-status active">● Active</span>
+            <span class="vacancy-candidates">👤 +4</span>
+            <span>Oct 22, 2023</span>
+          </article>
+        </section>
+
+        <div class="vacancies-footer-row">
+          <p>Showing 1 to 4 of 24 results</p>
+          <div class="vacancies-pagination">
+            <button type="button">‹</button>
+            <button class="active" type="button">1</button>
+            <button type="button">2</button>
+            <button type="button">3</button>
+            <button type="button">›</button>
+          </div>
+        </div>
+
+        <footer class="app-footer">
+          <div class="app-footer-brand">
+            <strong>MockIT AI</strong>
+            <span>© 2024 MockIT AI Assistant. All rights reserved.</span>
+          </div>
+          <nav>
+            <a href="#">Product</a>
+            <a href="#">Features</a>
+            <a href="#">Pricing</a>
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+          </nav>
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MockIT | Live Interview Workspace</title>
+    <meta
+      name="description"
+      content="Live interview workspace screen for the MockIT recruiter workspace."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="app-page">
+    <main class="app-shell">
+      <aside class="app-sidebar">
+        <div class="app-brand">
+          <div class="app-brand-icon">⬢</div>
+          <div>
+            <strong>MockIT AI</strong>
+            <span>Recruiter Pro</span>
+          </div>
+        </div>
+
+        <nav class="app-nav">
+          <a href="./dashboard.html"><span>▦</span><span>Dashboard</span></a>
+          <a href="./vacancies.html"><span>▭</span><span>Vacancies</span></a>
+          <a href="./candidate-overview.html"><span>◔</span><span>Candidates</span></a>
+          <a class="active" href="./live-workspace.html"><span>▤</span><span>Workspace</span></a>
+          <a href="#"><span>⊏</span><span>Library</span></a>
+          <a href="#"><span>▮</span><span>Analytics</span></a>
+        </nav>
+
+        <div class="app-sidebar-bottom">
+          <a href="#"><span>⚙</span><span>Settings</span></a>
+          <a href="#"><span>◫</span><span>Billing</span></a>
+        </div>
+      </aside>
+
+      <section class="app-main">
+        <header class="workspace-topbar">
+          <div class="workspace-live-pill">
+            <span class="workspace-live-dot"></span>
+            <strong>24:42</strong>
+            <b>LIVE INTERVIEW</b>
+          </div>
+          <div class="dashboard-top-actions">
+            <button type="button" aria-label="Notifications">◔</button>
+            <div class="dashboard-user compact">
+              <button class="avatar-button" type="button" aria-label="Profile">👨🏻</button>
+              <div>
+                <strong>James Wilson</strong>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <section class="workspace-grid">
+          <aside class="workspace-questions-card">
+            <div class="workspace-questions-head">
+              <h2>Question List</h2>
+              <span>12 TOTAL</span>
+            </div>
+
+            <div class="workspace-question-group">
+              <small>INTRO &amp; LOGISTICS</small>
+              <article class="workspace-question-item complete">
+                <strong>✓ Complete</strong>
+                <p>Self-introduction an...</p>
+              </article>
+            </div>
+
+            <div class="workspace-question-group">
+              <small>TECHNICAL STRATEGY</small>
+              <article class="workspace-question-item active">
+                <strong>▻ In Progress</strong>
+                <p>How do you handle technical debt?</p>
+              </article>
+              <p class="workspace-question-link">System design trade-offs...</p>
+              <p class="workspace-question-link">Code review best practices...</p>
+            </div>
+
+            <div class="workspace-question-group">
+              <small>BEHAVIORAL</small>
+              <p class="workspace-question-link">Conflict resolution in teams...</p>
+              <p class="workspace-question-link">Managing tight deadlines...</p>
+            </div>
+          </aside>
+
+          <div class="workspace-center-column">
+            <article class="workspace-main-question">
+              <div class="workspace-question-tags">
+                <span>STRATEGIC IMPACT</span>
+                <span>DIFFICULTY: HARD</span>
+              </div>
+              <h1>How do you handle technical debt during high-velocity development cycles?</h1>
+              <p>
+                "Look for awareness of short-term vs long term trade-offs,
+                documentation habits, and communication with product stakeholders."
+              </p>
+            </article>
+
+            <article class="workspace-assessment-card">
+              <div class="workspace-assessment-head">
+                <h2>✎ Active Assessment</h2>
+                <div class="workspace-assessment-actions">
+                  <button type="button">Save Snippet</button>
+                  <button type="button">✧ AI Assist</button>
+                </div>
+              </div>
+
+              <div class="workspace-response-box">
+                Start typing candidate response here...
+                Mention specific frameworks or methodologies they use to track debt.
+              </div>
+
+              <div class="workspace-score-row">
+                <div>
+                  <span>ANSWER QUALITY SCORE</span>
+                </div>
+                <strong>7.5<small>/10</small></strong>
+              </div>
+
+              <div class="workspace-score-bar">
+                <i><b style="width: 75%"></b></i>
+                <span class="workspace-score-knob"></span>
+              </div>
+
+              <div class="workspace-score-labels">
+                <span>Poor</span>
+                <span>Average</span>
+                <span>Exceptional</span>
+              </div>
+            </article>
+
+            <div class="workspace-nav-actions">
+              <a class="workspace-nav-button muted" href="#">← Previous Question</a>
+              <a class="workspace-nav-button primary" href="#">Next Question →</a>
+            </div>
+          </div>
+
+          <aside class="workspace-right-column">
+            <article class="workspace-candidate-card">
+              <div class="workspace-candidate-avatar">👨🏻</div>
+              <h2>Alex Chen</h2>
+              <p>Senior Frontend Engineer</p>
+              <div class="workspace-candidate-tags">
+                <span>8+ Years Exp</span>
+                <span>Remote OK</span>
+                <span>React/Vue</span>
+              </div>
+            </article>
+
+            <article class="workspace-insight-card warning">
+              <small>CRITICAL INSIGHT</small>
+              <h3>⚠ RISK: TENURE</h3>
+              <p>
+                Average role duration: <strong>14 months.</strong> Likely to jump if
+                growth stalls. Probe for long-term motivation.
+              </p>
+            </article>
+
+            <article class="workspace-insight-card primary">
+              <h3>◔ STRENGTH: TECH DEPTH</h3>
+              <p>Exceptional understanding of browser rendering engines and WebAssembly potential.</p>
+            </article>
+
+            <article class="workspace-insight-card neutral">
+              <h3>◌ ALIGNMENT</h3>
+              <p>Salary expectation matches range. Available to start in <strong>3 weeks.</strong></p>
+            </article>
+
+            <article class="workspace-log-card">
+              <small>LIVE SIGNAL LOG</small>
+              <ul>
+                <li class="green">Confidence peaking</li>
+                <li class="blue">Eye contact stable</li>
+                <li class="yellow">Keyword gap: "Scalability"</li>
+              </ul>
+            </article>
+          </aside>
+        </section>
+
+        <footer class="app-footer">
+          <div class="app-footer-brand">
+            <strong>MockIT AI Assistant</strong>
+            <span>© 2024 MockIT AI Assistant. All rights reserved.</span>
+          </div>
+          <nav>
+            <a href="#">Product</a>
+            <a href="#">Features</a>
+            <a href="#">Pricing</a>
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+          </nav>
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MockIT | Billing & Subscription</title>
+    <meta
+      name="description"
+      content="Billing and subscription screen for the MockIT recruiter workspace."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="app-page">
+    <main class="app-shell">
+      <aside class="app-sidebar">
+        <div class="app-brand">
+          <div class="app-brand-icon">⬢</div>
+          <div>
+            <strong>MockIT AI</strong>
+            <span>Recruiter Pro</span>
+          </div>
+        </div>
+
+        <nav class="app-nav">
+          <a href="./dashboard.html"><span>▦</span><span>Dashboard</span></a>
+          <a href="./vacancies.html"><span>▭</span><span>Vacancies</span></a>
+          <a href="./candidate-overview.html"><span>◔</span><span>Candidates</span></a>
+          <a href="./live-workspace.html"><span>▤</span><span>Workspace</span></a>
+          <a href="#"><span>⊏</span><span>Library</span></a>
+          <a href="#"><span>▮</span><span>Analytics</span></a>
+        </nav>
+
+        <div class="app-sidebar-bottom">
+          <a href="#"><span>⚙</span><span>Settings</span></a>
+          <a class="active" href="./billing.html"><span>◫</span><span>Billing</span></a>
+          <a class="app-primary-side" href="#">⊕ New Vacancy</a>
+        </div>
+      </aside>
+
+      <section class="app-main">
+        <header class="app-topbar billing-topbar">
+          <h1>Billing &amp; Subscription</h1>
+          <div class="billing-top-actions">
+            <div class="app-search">
+              <span>⌕</span>
+              <input type="text" placeholder="Search invoices..." />
+            </div>
+            <button type="button" aria-label="Notifications">◔</button>
+            <button class="avatar-button" type="button" aria-label="Profile">👩🏻</button>
+          </div>
+        </header>
+
+        <section class="billing-grid">
+          <article class="billing-plan-card">
+            <span class="billing-pill">● ACTIVE SUBSCRIPTION</span>
+            <h2>Pro Plan</h2>
+            <p>
+              You are currently using the Professional tier. Enjoy unlimited
+              interview templates and advanced AI candidate screening.
+            </p>
+
+            <div class="billing-plan-bottom">
+              <div class="billing-plan-meta">
+                <article>
+                  <span>RENEWAL DATE</span>
+                  <strong>Oct 24, 2024</strong>
+                </article>
+                <article>
+                  <span>BILLING CYCLE</span>
+                  <strong>Yearly ($240/yr)</strong>
+                </article>
+              </div>
+
+              <div class="billing-plan-actions">
+                <a class="primary" href="#">⇧ Upgrade Plan</a>
+                <a href="#">Cancel Subscription</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="billing-card payment-card">
+            <div class="billing-card-head">
+              <h2>Payment Method</h2>
+              <a href="#">Edit</a>
+            </div>
+            <div class="payment-visual">
+              <div class="payment-chip"></div>
+              <span>VISA</span>
+              <p>•••• •••• •••• 4242</p>
+              <small>EXPIRES<br /><strong>12/26</strong></small>
+              <div class="payment-circles"></div>
+            </div>
+            <p class="payment-note">
+              Your next charge will be processed automatically via the stored payment method.
+            </p>
+          </article>
+        </section>
+
+        <section class="billing-usage-grid">
+          <article class="billing-usage-card">
+            <div class="billing-usage-head">
+              <span>◔</span>
+              <strong>Candidates analyzed</strong>
+            </div>
+            <h3>42 <small>/50</small></h3>
+            <i><b style="width:84%"></b></i>
+            <div class="billing-usage-meta">
+              <span>84% CAPACITY</span>
+              <strong class="red">NEARING LIMIT</strong>
+            </div>
+          </article>
+
+          <article class="billing-usage-card">
+            <div class="billing-usage-head">
+              <span>◷</span>
+              <strong>AI Interview hours</strong>
+            </div>
+            <h3>12.5 <small>/25</small></h3>
+            <i class="purple"><b style="width:50%"></b></i>
+            <div class="billing-usage-meta">
+              <span>50% CAPACITY</span>
+              <strong>OPTIMAL</strong>
+            </div>
+          </article>
+
+          <article class="billing-usage-card">
+            <div class="billing-usage-head">
+              <span>▣</span>
+              <strong>Workspace storage</strong>
+            </div>
+            <h3>1.2 <small>/5 GB</small></h3>
+            <i class="blue"><b style="width:24%"></b></i>
+            <div class="billing-usage-meta">
+              <span>24% CAPACITY</span>
+              <strong>LOW USAGE</strong>
+            </div>
+          </article>
+        </section>
+
+        <section class="billing-history-card">
+          <div class="billing-card-head">
+            <h2>Billing History</h2>
+            <a href="#">⇩ Export All CSV</a>
+          </div>
+
+          <div class="billing-history-head">
+            <span>INVOICE ID</span>
+            <span>DATE ISSUED</span>
+            <span>AMOUNT</span>
+            <span>STATUS</span>
+            <span></span>
+          </div>
+
+          <article class="billing-history-row">
+            <strong>#MKT-2024-009</strong>
+            <span>Sep 24, 2024</span>
+            <span class="amount">$20.00</span>
+            <span class="status">PAID</span>
+            <button type="button">⇩</button>
+          </article>
+
+          <article class="billing-history-row">
+            <strong>#MKT-2024-008</strong>
+            <span>Aug 24, 2024</span>
+            <span class="amount">$20.00</span>
+            <span class="status">PAID</span>
+            <button type="button">⇩</button>
+          </article>
+
+          <article class="billing-history-row">
+            <strong>#MKT-2024-007</strong>
+            <span>Jul 24, 2024</span>
+            <span class="amount">$240.00</span>
+            <span class="status">PAID</span>
+            <button type="button">⇩</button>
+          </article>
+        </section>
+
+        <footer class="app-footer">
+          <div class="app-footer-brand">
+            <strong>MockIT AI Assistant</strong>
+            <span>© 2024 MockIT AI Assistant. All rights reserved.</span>
+          </div>
+          <nav>
+            <a href="#">Product</a>
+            <a href="#">Features</a>
+            <a href="#">Pricing</a>
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+          </nav>
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>

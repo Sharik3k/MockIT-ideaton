@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MockIT | Dashboard</title>
+    <meta
+      name="description"
+      content="Recruiter dashboard screen for the MockIT recruiter workspace."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="app-page">
+    <main class="app-shell">
+      <aside class="app-sidebar">
+        <div class="app-brand">
+          <div class="app-brand-icon">⬢</div>
+          <div>
+            <strong>MockIT AI</strong>
+            <span>Recruiter Pro</span>
+          </div>
+        </div>
+
+        <a class="app-primary-side top" href="#">⊕ New Vacancy</a>
+
+        <nav class="app-nav">
+          <a class="active" href="./dashboard.html"><span>▦</span><span>Dashboard</span></a>
+          <a href="./vacancies.html"><span>▭</span><span>Vacancies</span></a>
+          <a href="#"><span>◔</span><span>Candidates</span></a>
+          <a href="#"><span>▤</span><span>Workspace</span></a>
+          <a href="#"><span>⊏</span><span>Library</span></a>
+          <a href="#"><span>▮</span><span>Analytics</span></a>
+        </nav>
+
+        <div class="app-sidebar-bottom">
+          <a href="#"><span>⚙</span><span>Settings</span></a>
+          <a href="#"><span>◫</span><span>Billing</span></a>
+        </div>
+      </aside>
+
+      <section class="app-main">
+        <header class="app-topbar dashboard-topbar">
+          <div class="app-search">
+            <span>⌕</span>
+            <input type="text" placeholder="Search candidates or jobs..." />
+          </div>
+          <div class="dashboard-top-actions">
+            <button type="button" aria-label="Notifications">◔</button>
+            <button type="button" aria-label="Help">?</button>
+            <div class="dashboard-user">
+              <div>
+                <strong>Sarah Jenkins</strong>
+                <span>SENIOR RECRUITER</span>
+              </div>
+              <button class="avatar-button" type="button" aria-label="Profile">👩🏻</button>
+            </div>
+          </div>
+        </header>
+
+        <section class="dashboard-head">
+          <div>
+            <h1>Welcome back, Sarah.</h1>
+            <p>You have 12 interviews scheduled for this week and 3 pending offers.</p>
+          </div>
+          <div class="dashboard-date-pill">◷ Monday, October 24, 2024</div>
+        </section>
+
+        <section class="dashboard-stats-grid">
+          <article class="dashboard-stat-card">
+            <div class="dashboard-stat-head">
+              <span class="dashboard-stat-icon">▣</span>
+              <small>+12%</small>
+            </div>
+            <strong>24</strong>
+            <p>Active Roles</p>
+          </article>
+
+          <article class="dashboard-stat-card">
+            <div class="dashboard-stat-head">
+              <span class="dashboard-stat-icon">⋈</span>
+              <small>+4.2%</small>
+            </div>
+            <strong>1,248</strong>
+            <p>Total Candidates</p>
+          </article>
+
+          <article class="dashboard-stat-card">
+            <div class="dashboard-stat-head">
+              <span class="dashboard-stat-icon">▸</span>
+              <small class="muted">Stable</small>
+            </div>
+            <strong>86</strong>
+            <p>Interviews Done (MTD)</p>
+          </article>
+
+          <article class="dashboard-stat-card">
+            <div class="dashboard-stat-head">
+              <span class="dashboard-stat-icon orange">★</span>
+              <small>+0.8</small>
+            </div>
+            <strong>8.4/10</strong>
+            <p>Avg Match Score</p>
+          </article>
+        </section>
+
+        <section class="dashboard-content-grid">
+          <div class="dashboard-left-column">
+            <div class="dashboard-section-head">
+              <h2>Active Vacancies</h2>
+              <a href="./vacancies.html">View All</a>
+            </div>
+
+            <div class="dashboard-vacancies-list">
+              <article class="dashboard-vacancy-card">
+                <div class="dashboard-vacancy-logo">◍</div>
+                <div class="dashboard-vacancy-copy">
+                  <strong>Senior Product Designer</strong>
+                  <span>Design Team • San Francisco / Remote</span>
+                </div>
+                <div class="dashboard-vacancy-metric">
+                  <strong>18</strong>
+                  <span>APPLIED</span>
+                </div>
+                <div class="dashboard-vacancy-metric">
+                  <strong class="green">4</strong>
+                  <span>SHORTLISTED</span>
+                </div>
+                <button type="button">›</button>
+              </article>
+
+              <article class="dashboard-vacancy-card">
+                <div class="dashboard-vacancy-logo dark">✦</div>
+                <div class="dashboard-vacancy-copy">
+                  <strong>Backend Engineer (Node.js)</strong>
+                  <span>Engineering • New York / Hybrid</span>
+                </div>
+                <div class="dashboard-vacancy-metric">
+                  <strong>42</strong>
+                  <span>APPLIED</span>
+                </div>
+                <div class="dashboard-vacancy-metric">
+                  <strong class="green">7</strong>
+                  <span>SHORTLISTED</span>
+                </div>
+                <button type="button">›</button>
+              </article>
+
+              <article class="dashboard-vacancy-card">
+                <div class="dashboard-vacancy-logo dark">◉</div>
+                <div class="dashboard-vacancy-copy">
+                  <strong>Head of Growth Marketing</strong>
+                  <span>Marketing • London / Remote</span>
+                </div>
+                <div class="dashboard-vacancy-metric">
+                  <strong>12</strong>
+                  <span>APPLIED</span>
+                </div>
+                <div class="dashboard-vacancy-metric">
+                  <strong class="green">2</strong>
+                  <span>SHORTLISTED</span>
+                </div>
+                <button type="button">›</button>
+              </article>
+            </div>
+          </div>
+
+          <aside class="dashboard-right-column">
+            <div class="dashboard-ai-head">
+              <span>✿</span>
+              <h2>AI Insights</h2>
+            </div>
+
+            <article class="dashboard-insight-card primary">
+              <strong>5 candidates need interview prep</strong>
+              <p>
+                Based on their recent technical assessment scores, these candidates
+                would benefit from a MockIT automated coaching session before
+                their final interview.
+              </p>
+              <a href="#">Send Invitations</a>
+            </article>
+
+            <article class="dashboard-insight-card secondary">
+              <strong>Market Insight</strong>
+              <p>
+                Salary expectations for "Senior React Engineers" have risen 8% in
+                the EMEA region this quarter.
+              </p>
+            </article>
+
+            <section class="dashboard-activity">
+              <h2>Recent Activity</h2>
+
+              <article class="dashboard-activity-item">
+                <span class="dashboard-activity-avatar">👨🏻</span>
+                <div>
+                  <strong>Alex Rivera completed technical round</strong>
+                  <p>2 hours ago • Product Designer role</p>
+                </div>
+              </article>
+
+              <article class="dashboard-activity-item">
+                <span class="dashboard-activity-avatar">👨🏼</span>
+                <div>
+                  <strong>Marcus Thorne applied for position</strong>
+                  <p>5 hours ago • Backend Engineer role</p>
+                </div>
+              </article>
+
+              <article class="dashboard-activity-item">
+                <span class="dashboard-activity-avatar">👩🏻</span>
+                <div>
+                  <strong>Elena Vance score updated by AI</strong>
+                  <p>Yesterday • 9.2/10 Match Score</p>
+                </div>
+              </article>
+            </section>
+          </aside>
+        </section>
+
+        <footer class="app-footer">
+          <div class="app-footer-brand">
+            <span>© 2024 MockIT AI Assistant. All rights reserved.</span>
+          </div>
+          <nav>
+            <a href="#">Product</a>
+            <a href="#">Features</a>
+            <a href="#">Pricing</a>
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+          </nav>
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>

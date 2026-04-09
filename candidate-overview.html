@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MockIT | Candidate Overview</title>
+    <meta
+      name="description"
+      content="Candidate profile overview screen for the MockIT recruiter workspace."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="app-page">
+    <main class="app-shell">
+      <aside class="app-sidebar">
+        <div class="app-brand">
+          <div class="app-brand-icon">⬢</div>
+          <div>
+            <strong>MockIT AI</strong>
+            <span>Recruiter Pro</span>
+          </div>
+        </div>
+
+        <nav class="app-nav profile-nav">
+          <a href="./dashboard.html"><span>▦</span><span>Dashboard</span></a>
+          <a href="./vacancies.html"><span>▭</span><span>Vacancies</span></a>
+          <a class="active" href="./candidate-overview.html"><span>◔</span><span>Candidates</span></a>
+          <a href="#"><span>▤</span><span>Workspace</span></a>
+          <a href="#"><span>⊏</span><span>Library</span></a>
+          <a href="#"><span>▮</span><span>Analytics</span></a>
+        </nav>
+
+        <div class="app-sidebar-bottom">
+          <a href="#"><span>⚙</span><span>Settings</span></a>
+          <a href="#"><span>◫</span><span>Billing</span></a>
+          <a class="app-primary-side" href="#">New Vacancy</a>
+        </div>
+      </aside>
+
+      <section class="app-main">
+        <header class="app-topbar">
+          <div class="app-search">
+            <span>⌕</span>
+            <input type="text" placeholder="Search candidates..." />
+          </div>
+          <div class="app-top-actions">
+            <button type="button" aria-label="Notifications">◔</button>
+            <button type="button" aria-label="Help">?</button>
+            <button class="avatar-button" type="button" aria-label="Profile">👨🏻</button>
+          </div>
+        </header>
+
+        <section class="candidate-hero-card">
+          <div class="candidate-hero-main">
+            <div class="candidate-avatar">👨🏻</div>
+            <div class="candidate-main-copy">
+              <div class="candidate-headline">
+                <h1>Alex Thompson</h1>
+                <span>CANDIDATE</span>
+              </div>
+              <p>Senior Product Designer</p>
+              <div class="candidate-meta">
+                <span>⌖ San Francisco, CA</span>
+                <span>✉ a.thompson@design.com</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="candidate-score-grid">
+            <article>
+              <span>MATCH SCORE</span>
+              <strong>92%</strong>
+            </article>
+            <article>
+              <span>RISK LEVEL</span>
+              <strong class="green">Low</strong>
+            </article>
+          </div>
+
+          <nav class="candidate-tabs">
+            <a class="active" href="./candidate-overview.html">Overview</a>
+            <a href="#">Experience</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Assessments</a>
+            <a href="#">Interviews</a>
+          </nav>
+        </section>
+
+        <section class="candidate-content-grid">
+          <div class="candidate-left-column">
+            <article class="candidate-panel timeline-panel">
+              <div class="candidate-panel-head">
+                <h2>Experience Timeline</h2>
+                <button type="button">⌄</button>
+              </div>
+
+              <div class="timeline-item active">
+                <span class="timeline-dot"></span>
+                <div class="timeline-copy">
+                  <div class="timeline-top">
+                    <div>
+                      <strong>Lead Product Designer</strong>
+                      <p>Linear Labs • Full-time</p>
+                    </div>
+                    <small>2021 — Present</small>
+                  </div>
+                  <span>
+                    Spearheading design systems for enterprise-grade developer tools.
+                    Reduced user friction in onboarding by 45% through iterative UX
+                    research and high-fidelity prototyping.
+                  </span>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <span class="timeline-dot muted"></span>
+                <div class="timeline-copy">
+                  <div class="timeline-top">
+                    <div>
+                      <strong>Senior UX Designer</strong>
+                      <p>Stripe • Full-time</p>
+                    </div>
+                    <small>2018 — 2021</small>
+                  </div>
+                  <span>
+                    Core designer for checkout experiences and billing dashboard.
+                    Collaborated closely with engineering to implement React-based
+                    component libraries.
+                  </span>
+                </div>
+              </div>
+            </article>
+
+            <article class="candidate-panel notes-panel">
+              <h2>Recruiter Notes</h2>
+              <div class="candidate-note-card">
+                <div class="candidate-note-head">
+                  <div class="candidate-note-author">
+                    <span class="candidate-note-avatar">👨🏻</span>
+                    <strong>You (Internal Note)</strong>
+                  </div>
+                  <small>2 days ago</small>
+                </div>
+                <p>
+                  "Alex demonstrates exceptional clarity in his design process.
+                  During the screening call, he showed deep technical knowledge of
+                  design systems and how they scale. Very low churn risk; seems
+                  genuinely excited about our mission."
+                </p>
+              </div>
+              <a class="candidate-note-link" href="#">⊞ Add internal note</a>
+            </article>
+          </div>
+
+          <aside class="candidate-right-column">
+            <article class="candidate-panel expertise-panel">
+              <h2>Key Expertise</h2>
+              <div class="expertise-tags">
+                <span>Design Systems</span>
+                <span>React.js</span>
+                <span>Typography</span>
+                <span>User Research</span>
+                <span>Figma Pro</span>
+                <span>Node.js</span>
+                <span>Prototyping</span>
+                <span>Branding</span>
+              </div>
+
+              <div class="expertise-bars">
+                <div>
+                  <div class="expertise-bar-head">
+                    <span>LEADERSHIP</span>
+                    <strong>Advanced</strong>
+                  </div>
+                  <i><b style="width: 86%"></b></i>
+                </div>
+                <div>
+                  <div class="expertise-bar-head">
+                    <span>TECHNICAL UX</span>
+                    <strong>Expert</strong>
+                  </div>
+                  <i><b style="width: 95%"></b></i>
+                </div>
+              </div>
+            </article>
+
+            <article class="candidate-panel actions-panel">
+              <h2>Candidate Actions</h2>
+              <a class="candidate-action primary" href="#">◫ Schedule Interview</a>
+              <a class="candidate-action" href="#">▻ Send Message</a>
+              <a class="candidate-action danger" href="#">⊘ Reject Candidate</a>
+
+              <div class="candidate-links">
+                <a href="#">⌁ LinkedIn Profile</a>
+                <a href="#">▤ Resume_AlexT_2024.pdf</a>
+              </div>
+            </article>
+          </aside>
+        </section>
+
+        <footer class="app-footer">
+          <div class="app-footer-brand">
+            <strong>MockIT AI Assistant</strong>
+            <span>© 2024 MockIT AI Assistant. All rights reserved.</span>
+          </div>
+          <nav>
+            <a href="#">Product</a>
+            <a href="#">Features</a>
+            <a href="#">Pricing</a>
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+          </nav>
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>

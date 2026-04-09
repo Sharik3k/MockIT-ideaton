@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MockIT | Resume Analysis</title>
+    <meta
+      name="description"
+      content="AI resume analysis screen for the MockIT recruiter workspace."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="app-page">
+    <main class="app-shell">
+      <aside class="app-sidebar">
+        <div class="app-brand">
+          <div class="app-brand-icon">⬢</div>
+          <div>
+            <strong>MockIT AI</strong>
+            <span>Recruiter Pro</span>
+          </div>
+        </div>
+
+        <nav class="app-nav">
+          <a href="./dashboard.html"><span>▦</span><span>Dashboard</span></a>
+          <a class="active" href="./vacancies.html"><span>▭</span><span>Vacancies</span></a>
+          <a href="./candidate-overview.html"><span>◔</span><span>Candidates</span></a>
+          <a href="#"><span>▤</span><span>Workspace</span></a>
+          <a href="#"><span>⊏</span><span>Library</span></a>
+          <a href="#"><span>▮</span><span>Analytics</span></a>
+        </nav>
+
+        <div class="app-sidebar-bottom">
+          <a class="app-primary-side" href="#">⊕ New Vacancy</a>
+          <a href="#"><span>⚙</span><span>Settings</span></a>
+          <a href="#"><span>◫</span><span>Billing</span></a>
+        </div>
+      </aside>
+
+      <section class="app-main">
+        <header class="app-topbar dashboard-topbar">
+          <div class="app-search">
+            <span>⌕</span>
+            <input type="text" placeholder="Search candidates..." />
+          </div>
+          <div class="dashboard-top-actions">
+            <button type="button" aria-label="Notifications">◔</button>
+            <button type="button" aria-label="Help">?</button>
+            <div class="dashboard-user">
+              <div>
+                <strong>Alex Rivers</strong>
+                <span>Senior Recruiter</span>
+              </div>
+              <button class="avatar-button" type="button" aria-label="Profile">👨🏻</button>
+            </div>
+          </div>
+        </header>
+
+        <div class="resume-breadcrumbs">
+          <a href="./candidate-overview.html">Candidates</a>
+          <span>/</span>
+          <a href="#">Jordan Smith - Senior Engineer</a>
+        </div>
+
+        <section class="resume-head">
+          <div>
+            <h1>AI Resume Analysis</h1>
+          </div>
+          <div class="resume-head-actions">
+            <a href="#">⇩ Export Report</a>
+            <a class="muted" href="#">✦ Re-Analyze</a>
+          </div>
+        </section>
+
+        <section class="resume-content-grid">
+          <article class="resume-doc-card">
+            <div class="resume-doc-glow"></div>
+            <h2>Jordan Smith</h2>
+            <p class="resume-role">Senior Software Engineer</p>
+            <div class="resume-meta">
+              <span>⌖ San Francisco, CA</span>
+              <span>✉ j.smith@example.com</span>
+            </div>
+
+            <section class="resume-block">
+              <span>EXECUTIVE SUMMARY</span>
+              <p>
+                Results-oriented Senior Software Engineer with over 8 years of
+                experience in building scalable web applications. Expert in React,
+                Node.js, and cloud infrastructure. Proven track record of leading
+                cross-functional teams to deliver high-impact products.
+              </p>
+            </section>
+
+            <section class="resume-block">
+              <span>EXPERIENCE</span>
+              <article>
+                <strong>TechFlow Systems • Senior Engineer</strong>
+                <small>2020 — Present</small>
+                <p>
+                  Architected a microservices-based architecture handling 1M+
+                  daily active users. Reduced latency by 40% through aggressive
+                  caching and DB optimization.
+                </p>
+              </article>
+              <article>
+                <strong>CloudSync Inc • Software Engineer II</strong>
+                <small>2017 — 2020</small>
+                <p>
+                  Developed core features for a collaborative SaaS platform.
+                  Implemented real-time sync engine using WebSockets.
+                </p>
+              </article>
+            </section>
+
+            <section class="resume-block">
+              <span>EDUCATION</span>
+              <article>
+                <strong>University of California, Berkeley</strong>
+                <small>B.S. in Computer Science, 2016</small>
+              </article>
+            </section>
+
+            <div class="resume-doc-footer">
+              <small>PARSED_DOC_ID: AF-9921-X</small>
+              <span>⚙</span>
+            </div>
+          </article>
+
+          <div class="resume-right-column">
+            <div class="resume-top-cards">
+              <article class="resume-signal-card strong">
+                <h2>Strong Signals</h2>
+                <ul>
+                  <li>High-scale experience (1M+ DAU) matches role requirements perfectly.</li>
+                  <li>Top-tier academic background with relevant CS degree.</li>
+                  <li>Consistent career progression from SE II to Senior roles.</li>
+                </ul>
+              </article>
+
+              <article class="resume-signal-card warning">
+                <h2>Missing Depth</h2>
+                <ul>
+                  <li>Limited mention of testing frameworks (Jest/Cypress).</li>
+                  <li>Leadership scale is vague; "leading teams" needs headcount.</li>
+                </ul>
+              </article>
+            </div>
+
+            <article class="resume-risk-card">
+              <div class="resume-risk-head">
+                <h2>Risk Signals</h2>
+                <span>ATTENTION REQUIRED</span>
+              </div>
+
+              <div class="resume-risk-item">
+                <div>
+                  <strong>Generic project descriptions</strong>
+                  <p>
+                    "Developed core features" is listed multiple times without
+                    specific impact or technology stack details for the 2017–2020 period.
+                  </p>
+                </div>
+                <b>HIGH</b>
+              </div>
+
+              <div class="resume-risk-item">
+                <div>
+                  <strong>Stack Discrepancy</strong>
+                  <p>
+                    Candidate claims Cloud Expert but doesn't list specific certifications
+                    or specialized tools beyond "AWS".
+                  </p>
+                </div>
+                <b class="medium">MEDIUM</b>
+              </div>
+            </article>
+
+            <article class="resume-skills-card">
+              <h2>Skill Extraction & Confidence</h2>
+              <div class="resume-skill-pills">
+                <div><span>React.js</span><i><b style="width:95%"></b></i><strong>95%</strong></div>
+                <div><span>Node.js</span><i><b style="width:88%"></b></i><strong>88%</strong></div>
+                <div><span>Microservices</span><i><b style="width:82%"></b></i><strong>82%</strong></div>
+                <div><span>AWS</span><i><b style="width:75%"></b></i><strong>75%</strong></div>
+              </div>
+              <div class="resume-tag-row">
+                <span>TypeScript</span>
+                <span>GraphQL</span>
+                <span>Redis</span>
+                <span>Docker</span>
+              </div>
+            </article>
+
+            <article class="resume-recommendation">
+              <div class="resume-recommendation-icon">⚡</div>
+              <div>
+                <h2>Overall Recommendation</h2>
+                <p>
+                  "Proceed to technical interview. Focus on clarifying their specific
+                  role in microservices architecture and deep-dive into testing practices."
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <footer class="app-footer">
+          <div class="app-footer-brand">
+            <span>© 2024 MockIT AI Assistant. All rights reserved.</span>
+          </div>
+          <nav>
+            <a href="#">Product</a>
+            <a href="#">Features</a>
+            <a href="#">Pricing</a>
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+          </nav>
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>
