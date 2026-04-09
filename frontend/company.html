@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MockIT | Company Setup</title>
+    <meta
+      name="description"
+      content="Company setup screen for the MockIT recruiter onboarding flow."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="setup-page">
+    <main class="setup-shell">
+      <aside class="setup-sidebar">
+        <div class="setup-sidebar-head company-sidebar-head">
+          <h1>RecruitSilk</h1>
+          <p>SETUP GUIDE</p>
+        </div>
+
+        <nav class="setup-nav">
+          <a class="setup-nav-item" href="./welcome.html">
+            <span class="setup-nav-icon">→</span>
+            <span>Welcome</span>
+          </a>
+          <a class="setup-nav-item active" href="./company.html">
+            <span class="setup-nav-icon">▦</span>
+            <span>Company Info</span>
+          </a>
+          <a class="setup-nav-item" href="./hiring.html">
+            <span class="setup-nav-icon">◔</span>
+            <span>Team Setup</span>
+          </a>
+          <a class="setup-nav-item" href="#">
+            <span class="setup-nav-icon">✈</span>
+            <span>Launch</span>
+          </a>
+        </nav>
+
+        <div class="setup-profile">
+          <div class="setup-profile-icon">◉</div>
+          <span>Recruiter Admin</span>
+        </div>
+      </aside>
+
+      <section class="setup-main company-main">
+        <header class="setup-topbar company-topbar">
+          <a class="setup-wordmark" href="./index.html">RecruitSilk</a>
+          <nav class="company-topnav" aria-label="Company setup navigation">
+            <a href="#">Dashboard</a>
+            <a class="active" href="./company.html">Onboarding</a>
+          </nav>
+        </header>
+
+        <div class="company-progress-copy">
+          <p class="setup-step">STEP 2 OF 4</p>
+          <div class="company-heading-block">
+            <h2>Company setup</h2>
+            <p>Tell us about your workspace</p>
+          </div>
+        </div>
+
+        <div class="company-grid">
+          <section class="company-form-card">
+            <form class="company-form">
+              <label class="company-field">
+                <span>Company Name</span>
+                <input type="text" placeholder="e.g. Silk Recruitment Systems" />
+              </label>
+
+              <div class="company-field-grid">
+                <label class="company-field">
+                  <span>Industry</span>
+                  <div class="company-select-shell">
+                    <select>
+                      <option>Select industry</option>
+                    </select>
+                  </div>
+                </label>
+
+                <label class="company-field">
+                  <span>Region</span>
+                  <div class="company-select-shell">
+                    <select>
+                      <option>Select region</option>
+                    </select>
+                  </div>
+                </label>
+              </div>
+
+              <div class="company-field">
+                <span>Company Size</span>
+                <div class="company-size-switch" role="tablist" aria-label="Company size">
+                  <button type="button">1-50</button>
+                  <button class="active" type="button">51-200</button>
+                  <button type="button">201-1000</button>
+                  <button type="button">1000+</button>
+                </div>
+              </div>
+
+              <div class="company-actions">
+                <a class="company-button muted" href="./welcome.html">← Back</a>
+                <a class="company-button primary" href="./hiring.html">Next →</a>
+              </div>
+            </form>
+          </section>
+
+          <aside class="company-side-column">
+            <article class="company-info-card">
+              <div class="company-info-icon">◔</div>
+              <h3>Why this matters</h3>
+              <p>
+                Providing accurate company details helps us calibrate our
+                matching algorithm to find talent that fits your specific
+                culture and operational scale.
+              </p>
+            </article>
+
+            <article class="company-preview-card">
+              <img
+                class="company-preview-asset"
+                src="./visual-accent-card.png"
+                alt="Company profile visual accent card"
+              />
+            </article>
+          </aside>
+        </div>
+
+        <div class="company-security-pill">
+          <span class="company-security-icon">◈</span>
+          <p>Your data is secured with AES-256 encryption.</p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
